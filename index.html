@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Mafia A Unit Of Pihu Food | Varanasi</title>
+  <meta name="description" content="Food Mafia A Unit Of Pihu Food - spicy, tasty and affordable vegetarian food in Varanasi. Chaap, momos, Chinese, combos, pizza and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="loader" id="loader">
+    <div class="loader-ring"></div>
+    <div class="loader-logo">
+      <span class="logo-word">FOOD</span><br><span>MAFIA</span>
+    </div>
+    <div class="loader-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+  </div>
+
+  <header class="site-header" id="header">
+    <a href="#home" class="brand"><span>Food</span> Mafia</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#specials">Specials</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="spice s1"></div><div class="spice s2"></div><div class="spice s3"></div>
+      <div class="hero-bg"></div>
+      <div class="hero-content reveal">
+        <div class="badge">🔥 4.5★ Rated • 379+ Google Reviews • Varanasi</div>
+        <h1>Food Mafia</h1>
+        <h2>A Unit Of Pihu Food</h2>
+        <p class="hero-text">Where every bite feels illegal because it tastes too good. Chaap, momos, Chinese, platters, pizza, combos and full-on street food madness.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="tel:08564985486">Call Now</a>
+          <a class="btn secondary" href="#menu">Explore Menu</a>
+          <a class="btn ghost" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Food+Mafia+A+Unit+Of+Pihu+Food+Kachari+Varanasi">Directions</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <span class="hot">TODAY'S VIBE</span>
+        <h3>Malai Chaap + Momos + Chinese Combo</h3>
+        <p>Budget friendly. Spicy. Creamy. Fully loaded.</p>
+        <div class="mini-stats"><b>₹1–200</b><b>8 AM–11 PM</b><b>Veg Options</b></div>
+      </div>
+    </section>
+
+    <section class="stats reveal">
+      <div><strong data-count="379">0</strong><span>Google Reviews</span></div>
+      <div><strong>4.5★</strong><span>Customer Rating</span></div>
+      <div><strong data-count="50">0</strong><span>Menu Items</span></div>
+      <div><strong>11 PM</strong><span>Open Till</span></div>
+    </section>
+
+    <section class="section" id="specials">
+      <div class="section-head reveal">
+        <span>Chef's Madness</span>
+        <h2>Most Wanted Specials</h2>
+        <p>Food Mafia’s spicy gang of dishes people actually search for.</p>
+      </div>
+      <div class="special-grid">
+        <article class="special special-chaap big reveal"><div class="special-img"></div><div class="steam"></div><h3>Tandoori Chaap</h3><p>Smoky, spicy and creamy street-style chaap.</p></article>
+        <article class="special special-pizza reveal"><div class="special-img"></div><div class="steam"></div><h3>Pizza Mafia</h3><p>Loaded pizza with desi mafia attitude.</p></article>
+        <article class="special special-momos reveal"><div class="special-img"></div><div class="steam"></div><h3>Steamed Momos</h3><p>Soft momos with fire chutney.</p></article>
+        <article class="special special-chinese reveal"><div class="special-img"></div><div class="steam"></div><h3>Chinese Platter</h3><p>Noodles, manchurian, rolls and crunchy bites.</p></article>
+      </div>
+    </section>
+
+    <section class="section dark" id="menu">
+      <div class="section-head reveal">
+        <span>The Full Mafia Menu</span>
+        <h2>Spicy Menu Highlights</h2>
+        <p>Designed for quick ordering, family cravings and late evening hunger.</p>
+      </div>
+      <div class="filters reveal">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="chaap">Chaap</button>
+        <button data-filter="chinese">Chinese</button>
+        <button data-filter="momos">Momos</button>
+        <button data-filter="combo">Combos</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-cat="chinese"><div class="dish-img img-noodles"></div><span>🍜</span><h3>Noodles</h3><p>Classic street-style noodles with spicy kick.</p><b>Hot Pick</b></article>
+        <article class="menu-card" data-cat="chinese"><div class="dish-img img-platter"></div><span>🥢</span><h3>Chinese Platter</h3><p>Perfect plate for Chinese lovers.</p><b>Best Value</b></article>
+        <article class="menu-card" data-cat="chaap"><div class="dish-img img-malai"></div><span>🔥</span><h3>Malai Chaap</h3><p>Creamy, rich and fully loaded.</p><b>Crowd Fav</b></article>
+        <article class="menu-card" data-cat="momos"><div class="dish-img img-momos"></div><span>🥟</span><h3>Steamed Momos</h3><p>Soft momos with spicy sauce.</p><b>Popular</b></article>
+        <article class="menu-card" data-cat="chinese"><div class="dish-img img-roll"></div><span>🌯</span><h3>Spring Roll</h3><p>Crispy outside, spicy inside.</p><b>Crispy</b></article>
+        <article class="menu-card" data-cat="combo"><div class="dish-img img-combo"></div><span>🍱</span><h3>Chinese Combo</h3><p>Complete meal for quick cravings.</p><b>Combo</b></article>
+        <article class="menu-card" data-cat="combo"><div class="dish-img img-platter-combo"></div><span>🥘</span><h3>Platter Combo</h3><p>Big hunger, bigger plate.</p><b>Loaded</b></article>
+        <article class="menu-card" data-cat="chinese"><div class="dish-img img-babycorn"></div><span>🌽</span><h3>Crispy Baby Corn</h3><p>Crunchy snack with chatpata flavour.</p><b>Crunch</b></article>
+      </div>
+    </section>
+
+    <section class="section why">
+      <div class="section-head reveal"><span>Why People Love Us</span><h2>Fast. Fresh. Fully Mafia.</h2></div>
+      <div class="why-grid">
+        <div class="why-card reveal">🚚<h3>Fast Orders</h3><p>Quick dine-in, takeaway and delivery support.</p></div>
+        <div class="why-card reveal">🌱<h3>Vegan Options</h3><p>Veg-friendly dishes for everyone.</p></div>
+        <div class="why-card reveal">👨‍👩‍👧<h3>Family Friendly</h3><p>Kids menu and comfortable ambience.</p></div>
+        <div class="why-card reveal">💸<h3>Budget Friendly</h3><p>Great taste at ₹1–200 range.</p></div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="section-head reveal"><span>Google Review Energy</span><h2>20 Happy Customer Style Reviews</h2></div>
+      <div class="review-marquee">
+        <div class="review-track">
+          <div class="review">★★★★★<p>“Momos were really tasty and staff behaviour was nice.”</p><b>— Local Foodie</b></div>
+          <div class="review">★★★★★<p>“Tandoori chaap is seriously next level.”</p><b>— Rahul</b></div>
+          <div class="review">★★★★★<p>“Affordable and delicious. Perfect for students.”</p><b>— Anjali</b></div>
+          <div class="review">★★★★★<p>“Nice ambience, open-air feel and fast service.”</p><b>— Aman</b></div>
+          <div class="review">★★★★★<p>“Chinese platter is totally worth it.”</p><b>— Riya</b></div>
+          <div class="review">★★★★★<p>“Pizza Mafia and momos combo was amazing.”</p><b>— Ayush</b></div>
+          <div class="review">★★★★★<p>“Friendly environment and tasty food.”</p><b>— Sneha</b></div>
+          <div class="review">★★★★★<p>“Crispy baby corn was fresh and crunchy.”</p><b>— Vivek</b></div>
+          <div class="review">★★★★★<p>“Best place near Kachari for quick bites.”</p><b>— Priya</b></div>
+          <div class="review">★★★★★<p>“Service is superb and pricing is reasonable.”</p><b>— Mohit</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="section-head reveal"><span>Food Frames</span><h2>Spicy Gallery</h2><p>Replace these cards with real restaurant photos anytime.</p></div>
+      <div class="gallery-grid real-gallery">
+        <div class="g1"></div><div class="g2"></div><div class="g3"></div><div class="g4"></div><div class="g5"></div><div class="g6"></div><div class="g7"></div><div class="g8"></div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <span class="tag">Visit The Mafia Den</span>
+          <h2>Food Mafia A Unit Of Pihu Food</h2>
+          <p>Shop No 20, Kachari, opposite Rajshree Sweets, Nagar Nigam, Hamrautia, Varanasi, Uttar Pradesh 221002</p>
+          <p><b>Open:</b> 8 AM – 11 PM</p>
+          <p><b>Phone:</b> 085649 85486</p>
+          <div class="hero-actions small-actions">
+            <a class="btn primary" href="tel:08564985486">Call</a>
+            <a class="btn secondary" target="_blank" href="https://www.zomato.com/varanasi/food-mafia-a-unit-of-pihu-food-nadesar">Zomato</a>
+            <a class="btn ghost" target="_blank" href="https://www.swiggy.com/search?query=Food%20Mafia%20Pihu%20Food%20Varanasi">Swiggy</a>
+            <a class="btn map-btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Food+Mafia+A+Unit+Of+Pihu+Food+Kachari+Varanasi">Direction</a>
+          </div>
+        </div>
+        <iframe title="Food Mafia Map" src="https://www.google.com/maps?q=Food%20Mafia%20A%20Unit%20Of%20Pihu%20Food%20Kachari%20Varanasi&output=embed"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <div class="float-orders" aria-label="Quick restaurant actions">
+    <a class="float-call" href="tel:08564985486" aria-label="Call Food Mafia">📞</a>
+    <a class="float-zomato" target="_blank" href="https://www.zomato.com/varanasi/food-mafia-a-unit-of-pihu-food-nadesar" aria-label="Order on Zomato">Z</a>
+    <a class="float-swiggy" target="_blank" href="https://www.swiggy.com/search?query=Food%20Mafia%20Pihu%20Food%20Varanasi" aria-label="Order on Swiggy">S</a>
+    <a class="float-map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Food+Mafia+A+Unit+Of+Pihu+Food+Kachari+Varanasi" aria-label="Open Food Mafia location on map">📍</a>
+  </div>
+
+  <footer>
+    <h2>Food Mafia</h2>
+    <p>A Unit Of Pihu Food • Varanasi • Taste ka asli boss.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

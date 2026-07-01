@@ -1,0 +1,8 @@
+const loader=document.getElementById('loader');window.addEventListener('load',()=>setTimeout(()=>loader.classList.add('hide'),900));
+const menuToggle=document.getElementById('menuToggle'),nav=document.getElementById('nav');menuToggle.onclick=()=>nav.classList.toggle('open');document.querySelectorAll('.nav a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
+const progress=document.getElementById('progress');window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(scrollY/h*100)+'%'});
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.13});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const counters=document.querySelectorAll('[data-count]');const counterIO=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){const el=e.target,end=+el.dataset.count;let n=0;const t=setInterval(()=>{n+=Math.ceil(end/45);if(n>=end){n=end;clearInterval(t)}el.textContent=n+'+'},25);counterIO.unobserve(el)}}));counters.forEach(c=>counterIO.observe(c));
+document.querySelectorAll('.filters button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.menu-card').forEach(card=>{card.style.display=(f==='all'||card.dataset.cat===f)?'block':'none'})}));
+const track=document.querySelector('.review-track');track.innerHTML+=track.innerHTML;
+document.addEventListener('mousemove',e=>{document.body.style.setProperty('--x',e.clientX+'px');document.body.style.setProperty('--y',e.clientY+'px')});
